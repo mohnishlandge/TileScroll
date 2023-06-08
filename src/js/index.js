@@ -12,7 +12,9 @@ Promise.all([preloadImages('.tiles__line-img'), preloadFonts('rmd7deq')]).then((
     // Initialize the Locomotive scroll
     const scroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
-        smooth: true
+        smooth: true, smoothMobile: false,
+        direction: 'horizontal',
+        inertia: 0.8,
     });
 
     backtopEl.addEventListener('click', () => scroll.scrollTo(headerEl));

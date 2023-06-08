@@ -10,10 +10,10 @@
 
 body {
 	margin: 0;
-	--color-text: #fff;
-	--color-bg: #111;
+	--color-text: #000;
+	--color-bg: #fff;
 	--color-link: #aaa;
-	--color-link-hover: #fff;
+	--color-link-hover: #6e6e6e;
 	--color-alt: #7f6a57;
 	color: var(--color-text);
 	background-color: var(--color-bg);
@@ -113,8 +113,12 @@ main {
 	color: var(--color-alt);
 }
 
+header {
+	padding: 2rem 4rem 0 4rem;
+ 
+}
 .content {
-	padding: 3rem;
+	padding: 4rem;
 	min-height: 90vh;
 	display: flex;
 	position: relative;
@@ -122,6 +126,66 @@ main {
 	align-content: center;
 	justify-content: space-between;
 }
+.slider {
+	overflow: hidden;
+	border-radius: 2rem;
+	user-select: none;
+	padding: 2rem;
+	height: 94vh;
+	 width: 100vw; user-select: none;
+}
+
+.swiper {	overflow: hidden; border-radius: 2rem;
+	width: 100%;
+	height: 100%;
+  }
+
+  .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  .autoplay-progress {
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+	z-index: 10;
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	color: var(--swiper-theme-color);
+  }
+
+  .autoplay-progress svg {
+	--progress: 0;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	stroke-width: 4px;
+	stroke: var(--swiper-theme-color);
+	fill: none;
+	stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+	stroke-dasharray: 125.6;
+	transform: rotate(-90deg);
+  }
+
 
 .content--auto {
 	min-height: 0;
@@ -416,10 +480,15 @@ main {
 }
 
 /*! locomotive-scroll v3.5.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
-html.has-scroll-smooth {
-	overflow: hidden; 
+.has-scroll-smooth {
+	overflow: hidden;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;  
 }
-  
+
 html.has-scroll-dragging {
 	-webkit-user-select: none;
 	-moz-user-select: none;

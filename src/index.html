@@ -9,45 +9,81 @@
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" href="https://use.typekit.net/rmd7deq.css">
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" /> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+ 
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
 	<body class="demo-1 loading">
 		<main data-scroll-container>
-			<section id="header" class="content content--numbered">
-				<div class="frame">
-					<div class="frame__title-wrap">
-						<h1 class="frame__title">Image Tiles Scroll Animation with <a href="https://locomotivemtl.github.io/locomotive-scroll/">Locomotive Scroll</a></h1>
-					</div>
-					<div class="frame__links">
-						<a href="https://tympanus.net/Development/videoTransitions/">Previous demo</a>
-						<a href="https://tympanus.net/codrops/?p=51396">Article</a>
-						<a href="https://github.com/codrops/TileScroll/">GitHub</a>
-					</div>
-					<div class="frame__demos">
-						<a href="index.html" class="frame__demo frame__demo--current">Demo 1</a>
-						<a href="index2.html" class="frame__demo">Demo 2</a>
-						<a href="index3.html" class="frame__demo">Demo 3</a>
-					</div>
+
+			<header class="frame">
+				<div class="frame__title-wrap">
+					<h1 class="frame__title">Image Tiles Scroll Animation with <a href="https://locomotivemtl.github.io/locomotive-scroll/">Locomotive Scroll</a></h1>
 				</div>
+				<div class="frame__links">
+					<a href="https://tympanus.net/Development/videoTransitions/">Previous demo</a>
+					<a href="https://tympanus.net/codrops/?p=51396">Article</a>
+					<a href="https://github.com/codrops/TileScroll/">GitHub</a>
+				</div>
+				<div class="frame__demos">
+					<a href="index.html" class="frame__demo frame__demo--current">Demo 1</a>
+					<a href="index2.html" class="frame__demo">Demo 2</a>
+					<a href="index3.html" class="frame__demo">Demo 3</a>
+				</div>
+			</header>
+
+			<section  class="slider ">
+				 
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+					  <div class="swiper-slide"style="background-image:url(img/demo1/01.jpg); background-size: cover;">Slide 1</div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/02.jpg); background-size: cover;">Slide 4</div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/03.jpg); background-size: cover;">Slide 3</div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/04.jpg); background-size: cover;">Slide 2</div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/05.jpg); background-size: cover;">Slide 5</div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/06.jpg); background-size: cover;">Slide 6</div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/07.jpg); background-size: cover;">Slide 7</div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/08.jpg); background-size: cover;">Slide 8</div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/09.jpg); background-size: cover;">Slide 9</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+					<div class="autoplay-progress">
+					  <svg viewBox="0 0 48 48">
+						<circle cx="24" cy="24" r="20"></circle>
+					  </svg>
+					  <span></span>
+					</div>
+				  </div>
+
+			</section>
+
+
+			<section id="header" class="content content--numbered">
+				
 				<p class="content__pretitle">Unseeing the seen</p>
 				<h1 class="content__title" data-scroll data-scroll-speed="2">decondition yourself</h1>
 			</section>
 			<section class="tiles tiles--rotated" id="grid2">
 				<div class="tiles__wrap">
 					<div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
-						<div class="tiles__line-img"></div>
-						<div class="tiles__line-img"></div>
-						<div class="tiles__line-img"></div>
-						<div class="tiles__line-img" style="background-image:url(img/demo1/4.jpg)"></div>
-						<div class="tiles__line-img" style="background-image:url(img/demo1/5.jpg)"></div>
-						<div class="tiles__line-img" style="background-image:url(img/demo1/6.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/01.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/02.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/03.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/04.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/05.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/06.jpg)"></div>
 					</div>
 					<div class="tiles__line" data-scroll data-scroll-speed="-1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
-						<div class="tiles__line-img"></div>
-						<div class="tiles__line-img" style="background-image:url(img/demo1/8.jpg)"></div>
-						<div class="tiles__line-img" style="background-image:url(img/demo1/9.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/07.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/08.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/09.jpg)"></div>
 						<div class="tiles__line-img" style="background-image:url(img/demo1/10.jpg)"></div>
 						<div class="tiles__line-img" style="background-image:url(img/demo1/11.jpg)"></div>
 						<div class="tiles__line-img" style="background-image:url(img/demo1/12.jpg)"></div>
@@ -152,6 +188,39 @@
 				</div>
 			</section>
 		</main>
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+		  const progressCircle = document.querySelector(".autoplay-progress svg");
+		  const progressContent = document.querySelector(".autoplay-progress span");
+		  var swiper = new Swiper(".mySwiper", {
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+			  delay: 2500,
+			  disableOnInteraction: false
+			},
+			pagination: {
+			  el: ".swiper-pagination",
+			  clickable: true
+			},
+			navigation: {
+			  nextEl: ".swiper-button-next",
+			  prevEl: ".swiper-button-prev"
+			},
+			on: {
+			  autoplayTimeLeft(s, time, progress) {
+				progressCircle.style.setProperty("--progress", 1 - progress);
+				progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+			  }
+			}
+		  });
+		</script>
+
 		<script src="js/index.js"></script>
+
 	</body>
 </html>
