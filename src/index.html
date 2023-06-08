@@ -7,13 +7,15 @@
 		<meta name="description" content="Scroll animations for image grids powered by Locomotive Scroll" />
 		<meta name="keywords" content="locomotive scroll, scroll animation, website, javascript, demo" />
 		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="shortcut icon" href="./logo.svg">
 		<link rel="stylesheet" href="https://use.typekit.net/rmd7deq.css">
 		<link rel="stylesheet" type="text/css" href="css/base.css" /> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
   <!-- Demo styles -->
  
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
@@ -21,19 +23,20 @@
 	<body class="demo-1 loading">
 		<main data-scroll-container>
 
-			<header class="frame">
-				<div class="frame__title-wrap">
-					<h1 class="frame__title">Image Tiles Scroll Animation with <a href="https://locomotivemtl.github.io/locomotive-scroll/">Locomotive Scroll</a></h1>
-				</div>
-				<div class="frame__links">
-					<a href="https://tympanus.net/Development/videoTransitions/">Previous demo</a>
-					<a href="https://tympanus.net/codrops/?p=51396">Article</a>
-					<a href="https://github.com/codrops/TileScroll/">GitHub</a>
-				</div>
+			<header  id="header"   >
 				<div class="frame__demos">
-					<a href="index.html" class="frame__demo frame__demo--current">Demo 1</a>
-					<a href="index2.html" class="frame__demo">Demo 2</a>
-					<a href="index3.html" class="frame__demo">Demo 3</a>
+					<a href="index.html" class="frame__demo frame__demo--current">Home</a>
+					 
+				</div>
+				<div class="frame__title-wrap">
+					
+					<h1 class="frame__title">Ananth  </h1>	<img src="./logo.svg" alt=""> <h1 class="frame__title"> Dimonds  </h1>
+				</div>
+				 
+				<div class="frame__demos">
+					 
+					<a href="" class="frame__demo">Book</a>
+					<a href="" class="frame__demo">Contact</a>
 				</div>
 			</header>
 
@@ -41,15 +44,15 @@
 				 
 				<div class="swiper mySwiper">
 					<div class="swiper-wrapper">
-					  <div class="swiper-slide"style="background-image:url(img/demo1/01.jpg); background-size: cover;">Slide 1</div>
-					  <div class="swiper-slide"style="background-image:url(img/demo1/02.jpg); background-size: cover;">Slide 4</div>
-					  <div class="swiper-slide"style="background-image:url(img/demo1/03.jpg); background-size: cover;">Slide 3</div>
-					  <div class="swiper-slide"style="background-image:url(img/demo1/04.jpg); background-size: cover;">Slide 2</div>
-					  <div class="swiper-slide"style="background-image:url(img/demo1/05.jpg); background-size: cover;">Slide 5</div>
-					  <div class="swiper-slide"style="background-image:url(img/demo1/06.jpg); background-size: cover;">Slide 6</div>
-					  <div class="swiper-slide"style="background-image:url(img/demo1/07.jpg); background-size: cover;">Slide 7</div>
-					  <div class="swiper-slide"style="background-image:url(img/demo1/08.jpg); background-size: cover;">Slide 8</div>
-					  <div class="swiper-slide"style="background-image:url(img/demo1/09.jpg); background-size: cover;">Slide 9</div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/02.jpg); background-size: cover;"></div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/01.jpg); background-size: cover;"></div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/03.jpg); background-size: cover;"></div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/04.jpg); background-size: cover;"></div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/05.jpg); background-size: cover;"></div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/06.jpg); background-size: cover;"></div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/07.jpg); background-size: cover;"></div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/08.jpg); background-size: cover;"></div>
+					  <div class="swiper-slide"style="background-image:url(img/demo1/09.jpg); background-size: cover;"></div>
 					</div>
 					<div class="swiper-button-next"></div>
 					<div class="swiper-button-prev"></div>
@@ -65,7 +68,7 @@
 			</section>
 
 
-			<section id="header" class="content content--numbered">
+			<section class="content content--numbered">
 				
 				<p class="content__pretitle">Unseeing the seen</p>
 				<h1 class="content__title" data-scroll data-scroll-speed="2">decondition yourself</h1>
@@ -155,35 +158,35 @@
 			<section class="tiles tiles--columns" id="grid3">
 				<div class="tiles__wrap">
 					<div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid3" data-scroll-direction="vertical">
-						<div class="tiles__line-img" style="background-image:url(img/demo2/20.jpg)"></div>
-						<div class="tiles__line-img" style="background-image:url(img/demo2/19.jpg)"></div>
-						<div class="tiles__line-img" style="background-image:url(img/demo2/18.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/20.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/19.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/18.jpg)"></div>
 					</div>
 					<div class="tiles__line" data-scroll data-scroll-speed="-1" data-scroll-target="#grid3" data-scroll-direction="vertical">
-						<div class="tiles__line-img" style="background-image:url(img/demo2/16.jpg)"></div>
-						<div class="tiles__line-img" style="background-image:url(img/demo2/3.jpg)"></div>
-						<div class="tiles__line-img" style="background-image:url(img/demo2/14.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/16.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/03.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/14.jpg)"></div>
 					</div>
 					<div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid3" data-scroll-direction="vertical">
-						<div class="tiles__line-img" style="background-image:url(img/demo2/12.jpg)"></div>
-						<div class="tiles__line-img" style="background-image:url(img/demo2/11.jpg)"></div>
-						<div class="tiles__line-img" style="background-image:url(img/demo2/10.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/12.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/11.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/10.jpg)"></div>
 					</div>
 					<div class="tiles__line" data-scroll data-scroll-speed="-1" data-scroll-target="#grid3" data-scroll-direction="vertical">
-						<div class="tiles__line-img" style="background-image:url(img/demo2/8.jpg)"></div>
-						<div class="tiles__line-img" style="background-image:url(img/demo2/7.jpg)"></div>
-						<div class="tiles__line-img" style="background-image:url(img/demo2/6.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/08.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/07.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/06.jpg)"></div>
 					</div>
 				</div>
 			</section>
 			<section class="content">
 				<a class="backtop" data-scroll data-scroll-speed="4">Back to the top</a>
 				<div class="frame frame--footer">
-					<a href="https://twitter.com/codrops" class="frame__author">@codrops</a>
+					<a href="https://mohnishlandge.com" class="frame__author">Designed & Developed by <b> Mohnish Landge</b></a>
 					<div class="frame__demos">
-						<a href="index.html" class="frame__demo frame__demo--current">Demo 1</a>
-						<a href="index2.html" class="frame__demo">Demo 2</a>
-						<a href="index3.html" class="frame__demo">Demo 3</a>
+						<a href="index.html" class="frame__demo frame__demo--current">Book</a>
+						<a href="index.html" class="frame__demo">Contact</a>
+					
 					</div>
 				</div>
 			</section>
@@ -198,7 +201,11 @@
 		  const progressContent = document.querySelector(".autoplay-progress span");
 		  var swiper = new Swiper(".mySwiper", {
 			spaceBetween: 30,
-			centeredSlides: true,
+			centeredSlides: true, effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  speed: 1000,
 			autoplay: {
 			  delay: 2500,
 			  disableOnInteraction: false
